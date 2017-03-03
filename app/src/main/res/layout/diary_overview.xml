@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/color_steel_blue" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="390dp"
+            android:layout_height="590dp"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/diary_overview_swipe">
+            <ListView
+                android:layout_width="390dp"
+                android:layout_height="600dp"
+                android:id="@+id/diary_overview_list"
+                android:divider="@drawable/list_divider"
+                android:scrollbars="none"
+                >
+                <!--android:layout_width="match_parent"
+                android:layout_height="match_parent"-->
+            </ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_plus"
+            android:id="@+id/diary_add"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/diary_overview_date"
+            android:textColor="@color/color_base"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="[ DECEMBER | 20 | 2016 ]"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/diary_overview_back"
+            android:textColor="@color/color_base"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="[ RETURN TO HOME ]"/>
+
+        <!--<ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/diary_delete"
+            android:src="@drawable/ic_trash"
+            android:layout_marginBottom="65dp"
+            android:layout_marginRight="18dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            />-->
+    </RelativeLayout>
+</LinearLayout>

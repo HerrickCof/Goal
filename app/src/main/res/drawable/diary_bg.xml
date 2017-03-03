@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:bottom="-50dp"
+        >
+        <shape>
+            <solid
+                android:color="@color/shallow_grey"
+                />
+
+            <stroke
+                android:width="4dp"
+                android:dashGap="10dp"
+                android:dashWidth="20dp"
+                android:color="@color/deep_dark_grey"/>
+        </shape>
+    </item>
+
+</layer-list>
